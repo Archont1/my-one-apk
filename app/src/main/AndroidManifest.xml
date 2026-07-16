@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapp">
 
-    <!-- Разрешения (если не нужны — можно не добавлять) -->
+    
     <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
 
     <application
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
 
-        <!-- Главная активность (экран, который открывается первым) -->
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
