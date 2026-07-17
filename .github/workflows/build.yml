@@ -28,6 +28,9 @@ jobs:
       - name: Build debug APK
         run: ./gradlew assembleDebug
 
+      - name: List build outputs   # <-- НОВЫЙ ШАГ
+        run: ls -R app/build/outputs/
+
       - name: Copy APK to repo folder
         run: |
           mkdir -p apk
