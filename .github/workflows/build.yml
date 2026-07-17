@@ -32,6 +32,21 @@ jobs:
       - name: Build debug APK   # Собрать отладочную версию APK
         run: ./gradlew assembleDebug   # Команда Gradle для сборки
 
+
+
+- name: Copy APK to repo folder
+  run: |
+    mkdir -p apk        # создаём папку apk (если её нет)
+    cp app/build/outputs/apk/debug/app-debug.apk apk/app.apk   # копируем APK с фиксированным именем
+
+- name: Push APK to repository
+  uses: stefanzweifel/git-auto-commit-action@v5
+  with:
+    commit_message: "Update APK"
+    file_pattern: "apk/*.apk"   # отслеживаем изменения только в этой папке
+    skip_fetch: true
+
+
       - name: Upload APK      # Загрузить готовый APK как артефакт
         uses: actions/upload-artifact@v4
         with:
