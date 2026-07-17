@@ -14,6 +14,6 @@
         android:layout_height="wrap_content" <!-- высота=текст -->
         android:textSize="32sp"          <!-- размер -->
         android:textColor="#FF7F00"      <!-- цвет (белый) -->
-        android:text="A" />   <!-- сам текст -->
+        android:text="Ach" />   <!-- сам текст -->
 
 </LinearLayout>                          <!-- конец -->
