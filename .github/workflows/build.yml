@@ -36,9 +36,8 @@ jobs:
 
 - name: Copy APK to repo folder
 
-  run: |
-    mkdir -p apk        
-    cp app/build/outputs/apk/debug/app-debug.apk apk/app.apk  
+   run: 
+  mkdir -p apk && rm -f apk/app.apk && cp app/build/outputs/apk/debug/app-debug.apk apk/app.apk 
 
 - name: Push APK to repository
   uses: stefanzweifel/git-auto-commit-action@v5
