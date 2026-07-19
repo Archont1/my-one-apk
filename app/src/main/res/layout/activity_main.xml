@@ -3,7 +3,8 @@
 
 <LinearLayout                          
  <!-- контейнер -->
-    xmlns:android="http://schemas.android.com/apk/res/android"   <!-- словарь -->
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+ <!-- словарь -->
     android:layout_width="match_parent" 
  <!-- ширина=экран -->
     android:layout_height="match_parent" 
