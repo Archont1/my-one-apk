@@ -23,13 +23,21 @@ jobs:
         uses: gradle/gradle-build-action@v3
 
       - name: Make gradlew executable
-        run: chmod +x gradlew
+        run: chmod +x gradwx
 
       - name: Build debug APK
         run: ./gradlew assembleDebug
 
+      - name: List build outputs
+        run: |
+          echo "=== Структура app/build/ ==="
+          ls -R app/build/
+          echo "=== Поиск APK ==="
+          find app/build -name "*.apk"
+
       - name: Copy APK to repo folder
         run: |
+          mkdir -p app/build/outputs/apk/debug/
           mkdir -p apk
           cp app/build/outputs/apk/debug/app-debug.apk apk/app.apk
 
