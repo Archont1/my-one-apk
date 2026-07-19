@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>   
 <!-- заголовок -->
 
-<!-- контейнер ↓-->
 
 <LinearLayout                          
  
     xmlns:android="http://schemas.android.com/apk/res/android"  
- <!-- словарь -->
+
     android:layout_width="match_parent" 
- <!-- ширина=экран -->
+ 
     android:layout_height="match_parent" 
-<!-- высота=экран -->
+
     android:orientation="vertical"      
- <!-- вертикально -->
+ 
     android:gravity="center"          
-   <!-- центрировать -->
+   
     android:background="#FF6200EE">    
-  <!-- фон -->
+  
 
     <TextView               
              <!-- текст -->
