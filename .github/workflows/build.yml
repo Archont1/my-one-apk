@@ -23,7 +23,7 @@ jobs:
         uses: gradle/gradle-build-action@v3
 
       - name: Make gradlew executable
-        run: chmod +x gradwx
+        run: chmod +x gradlew
 
       - name: Build debug APK
         run: ./gradlew assembleDebug
