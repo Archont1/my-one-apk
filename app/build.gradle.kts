@@ -10,7 +10,7 @@ android {
     namespace = "com.example.myapp"
 
     // Версия Android SDK, по которой компилируеться 
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         // Идентификатор приложения (то же, что и namespace)
@@ -18,7 +18,7 @@ android {
         // Минимальная версия Android (Android 7.0+)
         minSdk = 24
         // Целевая версия Android (Android 14)
-        targetSdk = 34
+        targetSdk = 35
         // Внутренний номер версии (увеличивай при обновлении)
         versionCode = 1
         // Версия для пользователя (например, "1.0")
