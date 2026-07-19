@@ -1,25 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>   <!-- версия -->
+<?xml version="1.0" encoding="utf-8"?>   
+<!-- заголовок -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapp">         <!-- уникальный ID приложения -->
+    package="com.example.myapp">       
+  <!-- уникальный ID приложения -->
 
     <!-- Разрешения (пока нет) -->
     <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
 
     <application
-        android:allowBackup="true"       <!-- резервное копирование -->
-        android:icon="@mipmap/ic_launcher"  <!-- иконка -->
-        android:label="@string/app_name"    <!-- название (из strings.xml) -->
-        android:roundIcon="@mipmap/ic_launcher_round"  <!-- круглая иконка -->
-        android:supportsRtl="true"          <!-- поддержка арабского -->
-        android:theme="@style/Theme.MyApp"> <!-- тема оформления -->
+        android:allowBackup="true"  
+     <!-- резервное копирование -->
+        android:icon="@mipmap/ic_launcher" 
+ <!-- иконка -->
+        android:label="@string/app_name" 
+   <!-- название (из strings.xml) -->
+        android:roundIcon="@mipmap/ic_launcher_round" 
+ <!-- круглая иконка -->
+        android:supportsRtl="true"       
+   <!-- поддержка арабского -->
+        android:theme="@style/Theme.MyApp">
+ <!-- тема оформления -->
 
         <!-- Главный экран (Activity) -->
         <activity
-            android:name=".MainActivity"    <!-- класс экрана -->
-            android:exported="true">        <!-- доступен извне (с рабочего стола) -->
+            android:name=".MainActivity"   
+ <!-- класс экрана -->
+            android:exported="true">   
+     <!-- доступен извне (с рабочего стола) -->
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />   <!-- главное действие -->
+                <action android:name="android.intent.action.MAIN" /> 
+  <!-- главное действие -->
                 <category android:name="android.intent.category.LAUNCHER" /> <!-- иконка в меню -->
             </intent-filter>
         </activity>
