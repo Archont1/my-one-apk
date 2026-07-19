@@ -18,18 +18,18 @@
   
 
     <TextView               
-             <!-- текст -->
+             
         android:id="@+id/textView"     
-  <!-- имя -->
+  
         android:layout_width="wrap_content" 
- <!-- ширина=текст -->
+ 
         android:layout_height="wrap_content"
- <!-- высота=текст -->
+ 
         android:textSize="32sp"       
-   <!-- размер -->
+   
         android:textColor="#FF7F00"    
-  <!-- цвет (белый) -->
+  
         android:text="Ach" />  
- <!-- сам текст -->
+ 
 
 </LinearLayout>
