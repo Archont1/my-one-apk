@@ -28,6 +28,11 @@ jobs:
       - name: Build debug APK
         run: ./gradlew assembleDebug
 
+      - name: Copy APK to repo folder
+        run: |
+          mkdir -p apk
+          cp app/build/outputs/apk/debug/app-debug.apk apk/app.apk
+
       - name: Push APK to repository
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -35,7 +40,7 @@ jobs:
           file_pattern: "apk/*.apk"
           skip_fetch: true
 
-      - name: Upload APK
+      - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
