@@ -28,7 +28,7 @@ android {
     
     buildFeatures {
         // Включает детерминированную сборку 
-        deterministicBuild = true
+      //  deterministicBuild = true
     }
 
     // Типы сборки (debug и release)
