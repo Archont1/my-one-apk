@@ -16,4 +16,4 @@
         android:textColor="#FF7F00"      <!-- цвет (белый) -->
         android:text="Ach" />   <!-- сам текст -->
 
-</LinearLayout>                          <!-- конец -->
+</LinearLayout>
