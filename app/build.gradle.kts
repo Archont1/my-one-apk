@@ -25,25 +25,32 @@ android {
         versionName = "1.0"
     }
 
-    
     buildFeatures {
-        // Включает детерминированную сборку 
-      //  deterministicBuild = true
+        // Включает детерминированную сборку (закомментировано, т.к. не поддерживается)
+        // deterministicBuild = true
+    }
+
+    // Настройка совместимости Java и Kotlin
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 
     // Типы сборки (debug и release)
     buildTypes {
-        
         release {
             // Отключаем обфускацию и сжатие ресурсов 
             isMinifyEnabled = false
             isShrinkResources = false
-
         }
     }
 }
 
-
+// Подключаемые библиотеки
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
