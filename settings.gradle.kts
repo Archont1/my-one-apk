@@ -1,15 +1,15 @@
 pluginManagement {
     repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
+        google();
+        mavenCentral();
+        gradlePluginPortal();
     }
 }
 dependencyResolutionManagement {
     repositories {
-        google()
-        mavenCentral()
+        google();
+        mavenCentral();
     }
 }
-rootProject.name = "MyApp"
-include(":app")
+rootProject.name = "MyApp";
+include(":app");
